@@ -46,7 +46,6 @@ def get_orders():
 
     return orders_splitted
 
-    
 
 # вивід списку кліетів
 def show_clients(clients):
@@ -73,8 +72,6 @@ def show_clients(clients):
     for client in filtered_clients:
         print(f'код клієнта: {client[0]:3} назва: {client[1]:20} адреса: {client[2][:-1]:25}')
     
-    
-    
 
 # вивід списку накладних
 
@@ -83,5 +80,6 @@ if __name__ == '__main__':
     clients = get_clients()
     orders  = get_orders()
     
-    rc = show_clients(clients)
+    show_clients(clients)
+    
     pass   
